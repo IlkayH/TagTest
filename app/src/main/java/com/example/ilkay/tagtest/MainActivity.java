@@ -42,6 +42,11 @@ public class MainActivity extends ActionBarActivity {
             flowLayout.addView(button, FlowLayout.LayoutParams.WRAP_CONTENT,FlowLayout.LayoutParams.WRAP_CONTENT);
         }
 
+        for (int j = 0; j < 3; j++) {
+            Button button = new Button(this);
+            button.setText("Small");
+            flowLayout.addView(button, FlowLayout.LayoutParams.WRAP_CONTENT,FlowLayout.LayoutParams.WRAP_CONTENT);
+        }
 
 
         // Add the LinearLayout element to the ScrollView

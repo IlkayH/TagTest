@@ -25,38 +25,33 @@ public class MainActivity extends ActionBarActivity {
     private View notSelected;
     private View selected;
 
-//hello
+//Add buttons with code instead
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.layout_test);
 
-/*
-        FlowLayout flowLayout  = (FlowLayout) findViewById(R.id.flowLayout);
+
+        //Buttons are in correct size with code
+        FlowLayout flowLayout = (FlowLayout) findViewById(R.id.flowLayoutTest);
+
+        for (int j = 0; j < 3; j++) {
+            Button button = new Button(this);
+            button.setText("Some texttttt");
+            flowLayout.addView(button, FlowLayout.LayoutParams.WRAP_CONTENT,FlowLayout.LayoutParams.WRAP_CONTENT);
+        }
 
 
 
-        for (int i = 0; i < 20; i++) {
-            LinearLayout linearLayoutChild = new LinearLayout(this);
-            linearLayoutChild.setOrientation(LinearLayout.HORIZONTAL);
-            linearLayoutChild.setLayoutParams(new ViewGroup.LayoutParams(ViewGroup.LayoutParams.WRAP_CONTENT, ViewGroup.LayoutParams.WRAP_CONTENT));
-
-
-            for (int j = 0; j < 3; j++) {
-                Button button = new Button(this);
-                button.setText("Button");
-                flowLayout.addView(button);
-            }
-
-
-        }*/
+        // Add the LinearLayout element to the ScrollView
+//        scrollView.addView(flowLayout);
 
 
         /*//WORKING 3 BUTTONS
 
         // Find the ScrollView
-        ScrollView scrollView = (ScrollView)findViewById(R.id.scrollView);
+        ScrollView scrollView = (ScrollView)findViewById(R.id.scrollViewTest);
 
 
 
@@ -82,7 +77,7 @@ public class MainActivity extends ActionBarActivity {
         }
 
         // Add the LinearLayout element to the ScrollView
-       scrollView.addView(linearLayout);*/
+       //scrollView.addView(linearLayout);*/
 
 
 
